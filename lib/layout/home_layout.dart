@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:todo/layout/add_task_bottum_sheet.dart';
 import 'package:todo/moudlse/settings/settings.dart';
@@ -48,13 +49,13 @@ class _HomeLayoutState extends State<HomeLayout> {
                   Icons.list,
                   size: 30,
                 ),
-                label: 'list'),
+                label: 'list'.tr()),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.settings,
                   size: 30,
                 ),
-                label: 'setting')
+                label: 'setting'.tr())
           ],
         ),
       ),
