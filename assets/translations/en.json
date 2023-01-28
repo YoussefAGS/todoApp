@@ -1,0 +1,20 @@
+{
+  "english" : "English",
+  "Arabic": "Arabic",
+  "list": "List",
+  "setting": "Setting",
+  "language": "Language",
+  "Theme": "Theme",
+  "Delete": "Delete",
+  "Edit": "Edit",
+  "Edit Task": "Edit Task",
+  "Add Task": "Add Task",
+  "Title": "Title",
+  "Description":"Description",
+  "Select Date": "Select Date",
+  "Add New Task": "Add New Task",
+  "ok": "OK",
+  "dark": "Dark",
+  "light": "Light"
+
+}

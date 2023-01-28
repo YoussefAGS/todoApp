@@ -1,100 +1,96 @@
 import 'package:flutter/material.dart';
 import 'package:todo/shared/stayls/colours.dart';
 
-class MyTHemeData{
+class MyTHemeData {
+  static const Color colorwhit = Colors.white;
 
-  static const Color colorwhit= Colors.white;
-
-  static ThemeData lightTheme=ThemeData(
-    primaryColor: primarydark,
-    scaffoldBackgroundColor: greenBackground,
-
-    colorScheme: ColorScheme(
-        brightness:Brightness.light ,
-        primary: praimary_colour,
-        onPrimary: colorwhit,
-        secondary: green_colour,
-        onSecondary: colorwhit,
+  static ThemeData lightTheme = ThemeData(
+      primaryColor: Praimary_colour,
+      scaffoldBackgroundColor: Green_Background,
+      colorScheme: ColorScheme(
+        brightness: Brightness.light,
+        primary: Praimary_colour,
+        onPrimary: Colors.white,
+        secondary: Green_colour,
+        onSecondary: Colors.black,
         error: Colors.red,
         onError: colorwhit,
-        background: greenBackground,
-        onBackground: black_colour,
-        surface: Colors.grey,
-        onSurface: colorwhit,
+        background: Green_Background,
+        onBackground: Black_colour,
+        surface: Black_colour,
+        onSurface: Black_colour,
       ),
-
-      appBarTheme: AppBarTheme(
-        iconTheme: IconThemeData(color: white_colour)
+      appBarTheme: AppBarTheme(iconTheme: IconThemeData(color: White_colour)),
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        backgroundColor: White_colour,
+        selectedItemColor: Praimary_colour,
+        unselectedItemColor: Colors.grey,
       ),
-    bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      backgroundColor: white_colour,
-      selectedItemColor: praimary_colour,
-      unselectedItemColor: Colors.grey,
-    ),
       textTheme: const TextTheme(
-      headline1: TextStyle(
-      fontSize: 30,
-        fontWeight: FontWeight.bold,
-        color: white_colour,
-  ),
-        subtitle1: TextStyle(
-          fontSize: 25,
-          fontWeight: FontWeight.bold,
-          color: praimary_colour
-        ),
+          headline1: TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+            color: White_colour,
+          ),
+          subtitle1: TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+              color: Praimary_colour),
           subtitle2: TextStyle(
-          fontSize: 25,
-          fontWeight: FontWeight.bold,
-          color:green_colour
-      )
-  ),
-
-  );
-
-  static ThemeData darkTheme=ThemeData(
-    primaryColor: praimary_colour,
-    scaffoldBackgroundColor: greenBackground,
-
-    colorScheme: ColorScheme(
-      brightness:Brightness.light ,
-      primary: praimary_colour,
-      onPrimary: colorwhit,
-      secondary: green_colour,
-      onSecondary: colorwhit,
-      error: Colors.red,
-      onError: colorwhit,
-      background: greenBackground,
-      onBackground: black_colour,
-      surface: Colors.grey,
-      onSurface: colorwhit,
-    ),
-
-    appBarTheme: AppBarTheme(
-        iconTheme: IconThemeData(color: white_colour)
-    ),
-    bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      backgroundColor: white_colour,
-      selectedItemColor: praimary_colour,
-      unselectedItemColor: Colors.grey,
-    ),
-    textTheme: const TextTheme(
-        headline1: TextStyle(
-          fontSize: 30,
-          fontWeight: FontWeight.bold,
-          color: white_colour,
-        ),
-        subtitle1: TextStyle(
-            fontSize: 25,
+              fontSize: 25, fontWeight: FontWeight.bold, color: Green_colour),
+          bodyText1: TextStyle(
+              fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
+          headline2: TextStyle(
+            color: Colors.black,
+            fontSize: 14,
             fontWeight: FontWeight.bold,
-            color: praimary_colour
-        ),
-        subtitle2: TextStyle(
-            fontSize: 25,
+          )),
+      floatingActionButtonTheme: FloatingActionButtonThemeData(
+        backgroundColor: Praimary_colour,
+      ));
+
+  static ThemeData darkTheme = ThemeData(
+      primaryColor: Praimary_colour,
+      scaffoldBackgroundColor: Praimary_dark,
+      colorScheme: ColorScheme(
+        brightness: Brightness.light,
+        primary: Praimary_colour,
+        onPrimary: Black_colour,
+        secondary: Praimary_dark,
+        onSecondary: Colors.white,
+        error: Colors.red,
+        onError: colorwhit,
+        background: Praimary_dark,
+        onBackground: Black_colour,
+        surface: Colors.black,
+        onSurface: Colors.black,
+      ),
+      appBarTheme: AppBarTheme(iconTheme: IconThemeData(color: White_colour)),
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        backgroundColor: White_colour,
+        selectedItemColor: Praimary_colour,
+        unselectedItemColor: Colors.grey,
+      ),
+      textTheme: const TextTheme(
+          headline1: TextStyle(
+            fontSize: 30,
             fontWeight: FontWeight.bold,
-            color:green_colour
-        )
-    ),
-
-  );
-
+            color: White_colour,
+          ),
+          subtitle1: TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+              color: Praimary_colour),
+          subtitle2: TextStyle(
+              fontSize: 25, fontWeight: FontWeight.bold, color: Green_colour),
+          bodyText1: TextStyle(
+              fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
+          headline2: TextStyle(
+            color: Colors.white,
+            fontSize: 14,
+            fontWeight: FontWeight.bold,
+          )),
+      floatingActionButtonTheme: FloatingActionButtonThemeData(
+        backgroundColor: Praimary_colour,
+      ));
 }
